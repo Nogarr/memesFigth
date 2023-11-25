@@ -1,0 +1,59 @@
+header {
+    background-color: #e96005;
+    padding: 10px;
+  }
+
+  .barra-superior {
+    display: flex;
+    align-items: center;
+}
+
+.barra-superior img {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 10px;
+}
+
+.Titulo h1 {
+    margin: 0;
+}
+
+/* Contenedor de ranking */
+.ranking-container {
+    max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #dd7411b5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Tabla de ranking */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #e3710d;
+    text-align: left;
+}
+
+th {
+    background-color: #e3710d   ;
+    color: #fff;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ffc107;
+    border: none;
+}

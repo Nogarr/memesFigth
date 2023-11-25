@@ -1,0 +1,58 @@
+
+<body class="fondo">
+    <header class = fondoHeader>
+        <div class="barra-superior">
+            <img src="./assets/Logo/Icono_Armadillo.png" alt="Icono">
+            <div class="Titulo">
+                <h1>Memes Figth</h1>
+            </div>
+        </div>
+    </header>
+
+    <div *ngIf="showLogin" class=--bs-breadcrumb-divider: aria-label="breadcrumb">
+        <h1>Login</h1>
+        <form>
+
+            <div class="label-inside-input">
+                <input class="input-group"[(ngModel)]="email" type="email" id="email" name="email" required placeholder=" ">
+                <label for="email">Nombre de Usuario:</label>
+            </div>
+
+            <div class="label-inside-input">
+                <input class="input-group" [(ngModel)]="password" type="password" id="password" name="password" required placeholder=" ">
+                <label for="password">Contraseña:</label>
+            </div>
+
+            <div class="button-container">
+                <button (click)="verificacion()" type="button" class="btn btn-warning">Iniciar Sesión</button>
+                <button id="toggleButton" (click)="toggleForms()" type="button" class="btn btn-warning">Registrarse</button>            </div>
+        </form>
+    </div>
+
+    <div *ngIf="!showLogin" class="login-container">
+        <h1>Registro</h1>
+        <form>
+            <div class="label-inside-input">
+                <input  class="input-group" [(ngModel)]="email2" type="email" id="email2" name="email2" required placeholder=" ">
+                <label for="email2">Nombre de Usuario:</label>
+            </div>
+
+            <div class="label-inside-input">
+                <input class="input-group" [(ngModel)]="password2" type="password" id="password2" name="password2" required placeholder=" ">
+                <label for="password2">Contraseña:</label>
+            </div>
+
+            <div class="button-container">
+                <button (click)="registrarUsuario()"type="button" class="btn btn-warning">Registrarse</button>
+                <button (click)="toggleForms()" type="button" class="btn btn-warning">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+
+
+
+
+
+

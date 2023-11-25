@@ -1,0 +1,64 @@
+header {
+    background-color: #e96005;
+    padding: 10px;
+  }
+
+  /* Contenedor principal */
+.container {
+    max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e9600567;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Formulario */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+
+/* Imagen del meme */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+/* Resultados Finales */
+h3 {
+    text-align: center;
+}
+
+/* Botón de Volver al Menú */
+button {
+    display: block;
+    margin: 20px auto;
+}
+
+.barra-superior {
+  display: flex;
+  align-items: center;
+}
+
+.barra-superior img {
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  margin-right: 10px;
+}

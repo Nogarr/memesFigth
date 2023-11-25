@@ -1,0 +1,47 @@
+<header>
+    <div class="barra-superior">
+        <img src="./assets/Logo/Icono_Armadillo.png" alt="Icono">
+        <div class="Titulo">
+            <h1>Memes Figth</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <h2>Crea tus Memes</h2>
+
+    <form [formGroup]="memeForm" *ngIf="turnoActual <= 2 && !mostrarResultados">
+        <label for="text0">Texto superior:</label>
+        <input type="text" formControlName="text0" id="text0">
+
+        <label for="text1">Texto inferior:</label>
+        <input type="text" formControlName="text1" id="text1">
+
+        <button type="button" class= "btn btn-warning"(click)="actualizarMeme()">Generar Meme</button>
+        <button type="button" class="btn btn-warning" (click)="cambiarTemplate()">Cambiar Plantilla</button>
+    </form>
+
+    <div *ngIf="memeImageVisible && turnoActual <= 2 && !mostrarResultados">
+        <img [src]="memeUrl" alt="Meme generado">
+    </div>
+
+    <div *ngIf="turnoActual <= 2 && !mostrarResultados">
+        <p>Tiempo restante: {{ tiempoRestante }} segundos</p>
+    </div>
+
+    <button type="button" class="btn btn-warning" *ngIf="turnoActual <= 2 && !mostrarResultados" (click)="detenerTurno()">Terminar
+        Turno</button>
+
+    <div *ngIf="mostrarResultados">
+        <h3>Resultados Finales</h3>
+        <p *ngIf="memeImageVisible">Último Meme Turno 1:</p>
+        <img *ngIf="memeImageVisible" [src]="memesTurno1[memesTurno1.length - 1]"
+            alt="Último Meme Turno 1">
+
+        <p *ngIf="memeImageVisible">Último Meme Turno 2:</p>
+        <img *ngIf="memeImageVisible" [src]="memesTurno2[memesTurno2.length - 1]"
+            alt="Último Meme Turno 2">
+
+        <button type="button" class="btn btn-warning" (click)="onClick()">Volver al Menú</button>
+    </div>
+</div>

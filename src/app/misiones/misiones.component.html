@@ -1,0 +1,44 @@
+    <header>
+        <div class="barra-superior">
+            <img src="./assets/Logo/Icono_Armadillo.png" alt="Icono">
+            <div class="Titulo">
+                <h1>Memes Figth</h1>
+            </div>
+        </div>
+    </header>
+
+
+    <div>
+        <h2>Misión Rey de los Memes</h2>
+        <div class="barra">
+            <div class="progreso-nivel" [style.width.%]="(user.nivel / 100) * 100">
+                {{ user.nivel }} / 100
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Misión: Coleccionista Experto</h2>
+        <div class="barra">
+            <div class="progreso-trofeos" [style.width.%]="(user.trofeos.length / 8) * 100">
+                {{ user.trofeos.length }} / 8
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Misión: Loco por los memes</h2>
+        <div class="barra">
+            <div class="progreso-generatedmemes" [style.width.%]="(user.generatedmemes/1000) * 100">
+                {{ user.generatedmemes }} / 1000
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <h2>Nivel</h2>
+        <p>{{ nivel }}</p>
+        <button (click)="roadToMenu()" class="btn btn-warning">Volver al menú</button>
+    </div>
+

@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #e96005;
+  padding: 10px;
+}
+
+.barra-superior {
+  display: flex;
+  align-items: center;
+}
+
+.barra-superior img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+  display: block; /* Make the image a block element */
+  margin: 0; /* Remove margin to prevent centering */
+  width: 50px;
+}
+
+.Titulo h1 {
+  margin: 0;
+}
+
+.tienda-container{
+  display: flex;
+  flex-direction: column; /* Alinear verticalmente */
+  align-items: center;    /* Alinear horizontalmente */
+  justify-content: center; /* Alinear verticalmente */
+  text-align: center;      /* Alinear el texto en el centro */
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ffc107;
+  border: none;
+}
+
+/* Imágenes del meme, tienda y fotos de perfil */
+img {
+  max-width: 140%; /* Aumenta el tamaño en un 40% */
+  height: auto;
+  margin-top: 15px;
+  max-width: 250px; /* Ajusta el tamaño según sea necesario */
+  display: block; /* Make the image a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Resultados Finales */
+h3 {
+  text-align: center;
+}
+
+/* Botón para volver al menú */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ffc107;
+  border: none;
+}
+
+/* Estilos específicos para la tienda y resultados de compra */
+.tienda-container img,
+.resultado-mensaje img {
+  width: 140%; /* Aumenta el tamaño en un 40% */
+  height: auto;
+  margin-top: 15px;
+  max-width: 100px; /* Ajusta el tamaño según sea necesario */
+  display: block; /* Make the image a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.tienda-container button,
+.resultado-mensaje button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ffc107;
+  border: none;
+}

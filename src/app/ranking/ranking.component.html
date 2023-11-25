@@ -1,0 +1,36 @@
+<header>
+    <div class="barra-superior">
+        <img src="./assets/Logo/Icono_Armadillo.png" alt="Icono">
+        <div class="Titulo">
+            <h1>Memes Figth</h1>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="ranking-container">
+        <h2>Tabla de Ranking</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Posición</th>
+                    <th>Usuario</th>
+                    <th>Monedas</th>
+                    <th>Memes Generados</th>
+                    <th>Nivel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.coins }}</td>
+                    <td>{{ user.generatedmemes }}</td>
+                    <td>{{ user.nivel }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button (click)="roadToMenu()" class="btn btn-warning">Volver al menú</button>
+</body>
+

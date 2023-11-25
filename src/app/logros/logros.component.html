@@ -1,0 +1,20 @@
+<header>
+    <div class="barra-superior">
+        <img src="./assets/Logo/Icono_Armadillo.png" alt="Icono">
+        <div class="Titulo">
+            <h1>Memes Fight</h1>
+        </div>
+    </div>
+</header>
+
+<body class="fondo">
+    <div class="container">
+        <div *ngFor="let logro of logros">
+            <div class="imagen-container">
+                <h1>{{ logro.nombre }}</h1>
+                <img [src]="logro.ruta" alt="Image">
+            </div>
+        </div>
+        <button (click)="roadToMenu()" type="submit">Volver al menú</button>
+    </div>
+</body>

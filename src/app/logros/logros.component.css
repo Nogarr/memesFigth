@@ -1,0 +1,50 @@
+header {
+    background-color: #e96005;
+    padding: 10px;
+  }
+
+  .barra-superior {
+    display: flex;
+    align-items: center;
+}
+
+.barra-superior img {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 10px;
+}
+
+.Titulo h1 {
+    margin: 0;
+}
+
+/* Contenedor principal */
+.fondo {
+    background-color: #000000; /* Color de fondo principal */
+}
+
+.container {
+    max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e96005; /* Color de fondo del contenedor */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Galería de imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Botón para volver al menú */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ffc107; /* Color del botón */
+    border: none;
+}

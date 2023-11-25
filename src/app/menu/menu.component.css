@@ -1,0 +1,31 @@
+header {
+    background-color: #e96005;
+    padding: 10px;
+}
+
+/* Estilo para el contenedor de los botones */
+.bg-secondary-subtle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Establece la altura al 100% del viewport */
+    background-color: #000 !important; /* Añade !important para asegurarte de que este estilo prevalezca */
+}
+
+/* Estilo para los botones */
+.btn {
+    margin-bottom: 10px; /* Espaciado entre los botones */
+    color: #fff; /* Asegura que el texto sea visible en el fondo oscuro */
+}
+
+.barra-superior {
+  display: flex;
+  align-items: center;
+}
+
+
+.barra-superior img {
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  margin-right: 10px;
+}

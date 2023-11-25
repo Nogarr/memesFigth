@@ -1,0 +1,67 @@
+/* Estilo general */
+
+
+/* Header */
+header {
+    background-color: #e96005;
+    padding: 10px;
+}
+
+.barra-superior {
+    display: flex;
+    align-items: center;
+}
+
+.barra-superior img {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Ajusta el ancho según sea necesario */
+    margin: auto;
+}
+
+.label-inside-input {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.label-inside-input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+    color: #000
+}
+
+.input-group:focus + label,
+.input-group:valid + label {
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+

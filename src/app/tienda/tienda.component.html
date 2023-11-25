@@ -1,0 +1,58 @@
+<header>
+  <div class="barra-superior">
+      <img src="./assets/Logo/Icono_Armadillo.png" alt="Icono">
+      <div class="Titulo">
+          <h1>Memes Figth</h1>
+      </div>
+  </div>
+
+  <br><br>
+
+</header>
+
+  <div class="tienda-container">
+      <h1>Tienda</h1>
+      <p>Coins disponibles: {{ user.coins }}</p>
+
+      <div *ngFor="let gachapon of gachapones" class="gachapon-item">
+          <img [src]="getImagenSrc(gachapon)" alt="{{ gachapon.id }}" />
+          <button (click)="girarGachapon(gachapon.id)">Girar Gachapon (Costo: 10 coins)</button>
+      </div>
+
+      <br><br>
+
+      <!-- Nuevo botón para "Testea tu suerte" -->
+      <div class="testear-suerte">
+          <button (click)="testearTuSuerte()">Testea tu suerte (Costo: 10 coins)</button>
+          <!-- Mostrar mensaje de resultado -->
+          <div *ngIf="mensajeResultado" class="resultado-mensaje">
+              {{ mensajeResultado }}
+          </div>
+      </div>
+
+      <br><br>
+
+
+     <img src="./assets/fotos/foto1.jpg" alt="Foto de perfil 0" />
+      <button (click)="comprarFoto(0)" >Comprar (Costo: 50 coins)</button>
+
+
+     <img src="./assets/fotos/foto2.jpg" alt="Foto de perfil 1" />
+      <button (click)="comprarFoto(1)" >Comprar(Costo: 50 coins)</button>
+
+
+      <img src="./assets/fotos/foto3.jpg" alt="Foto de perfil 2" />
+      <button (click)="comprarFoto(2)" >Comprar(Costo: 50 coins)</button>
+
+      <div *ngIf="mensajeResultadoF" class="resultado-mensaje">
+          {{ mensajeResultadoF }}
+      </div>
+
+      <br><br>
+
+      <div class="volver-menu">
+          <button (click)="roadToMenu()" type="submit">Volver al menú</button>
+      </div>
+
+  </div>
+

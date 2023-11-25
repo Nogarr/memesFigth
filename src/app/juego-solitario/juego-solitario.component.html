@@ -1,0 +1,31 @@
+<header>
+  <div class="barra-superior">
+      <img src="./assets/Logo/Icono_Armadillo.png" alt="Icono">
+      <div class="Titulo">
+          <h1>Memes Figth</h1>
+      </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="meme-generator">
+    <!-- Formulario para generar memes -->
+    <div *ngIf="memeImageVisible">
+      <img [src]="memeUrl" alt="Meme generado" />
+    </div>
+    <form [formGroup]="memeForm" (ngSubmit)="actualizarMeme()">
+      <div class="form-group">
+        <label for="text0">Texto 1 </label>
+        <input type="text" formControlName="text0" name="text0" />
+      </div>
+      <div class="form-group">
+        <label for="text1">Texto 2 </label>
+        <input type="text" formControlName="text1" name="text1" />
+      </div>
+      <button type="submit">Generar Meme</button>
+    </form>
+    <button (click)="cambiarTemplate()">Cambiar Plantilla</button>
+  </div>
+  <!-- Botón para cerrar sesión -->
+  <button (click)="onClick()">Volver al Menu</button>
+</div>

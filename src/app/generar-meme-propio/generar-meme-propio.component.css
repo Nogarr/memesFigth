@@ -1,0 +1,63 @@
+header {
+  background-color: #e96005;
+  padding: 10px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.actions {
+  text-align: center;
+}
+
+/* Estilo para la vista previa de la imagen */
+.img-preview {
+  text-align: center;
+}
+
+.img-preview img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.barra-superior {
+  display: flex;
+  align-items: center;
+}
+
+
+.barra-superior img {
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  margin-right: 10px;
+}

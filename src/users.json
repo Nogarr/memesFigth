@@ -1,0 +1,121 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "nogar",
+      "password": "123",
+      "experience": 54,
+      "coins": 111109685,
+      "generatedmemes": 1039,
+      "trofeos": [
+        "./assets/memes/3.png",
+        "./assets/memes/4.png",
+        "./assets/memes/6.png",
+        "./assets/memes/7.png",
+        "./assets/memes/5.png",
+        "./assets/memes/2.png",
+        "./assets/memes/8.png",
+        "./assets/memes/1.png"
+      ],
+      "logros": [
+        {
+          "ruta": "./assets/Logros/locoPorLosMemes.jpg",
+          "nombre": "Loco Por Los Memes"
+        },
+        {
+          "ruta": "./assets/Logros/coleccionistaExperto.jpg",
+          "nombre": "Coleccionista Experto"
+        },
+        {
+          "ruta": "./assets/Logros/reyDeLosMemes.jfif",
+          "nombre": "Rey De Los Memes"
+        }
+      ],
+      "nivel": 100,
+      "fotoPerfil": [
+        "./assets/fotos/foto2.jpg",
+        "./assets/fotos/foto1.jpg",
+        "./assets/fotos/foto3.jpg"
+      ],
+      "fotoPerfilActual": []
+    },
+    {
+      "id": 2,
+      "email": "seba",
+      "password": "",
+      "experience": 0,
+      "coins": 0,
+      "generatedmemes": 0,
+      "trofeos": [],
+      "logros": [],
+      "nivel": 0,
+      "fotoPerfil": [],
+      "fotoPerfilActual": []
+    },
+    {
+      "id": 3,
+      "email": "seba1",
+      "password": "123",
+      "experience": 0,
+      "coins": 0,
+      "generatedmemes": 0,
+      "trofeos": [],
+      "logros": [],
+      "nivel": 0,
+      "fotoPerfil": [],
+      "fotoPerfilActual": []
+    },
+    {
+      "id": 4,
+      "email": "fasdffassdf",
+      "password": "111222",
+      "experience": 0,
+      "coins": 0,
+      "generatedmemes": 0,
+      "trofeos": [],
+      "logros": [],
+      "nivel": 0,
+      "fotoPerfil": [],
+      "fotoPerfilActual": []
+    },
+    {
+      "id": 5,
+      "email": "aaaa",
+      "password": "111222",
+      "experience": 0,
+      "coins": 0,
+      "generatedmemes": 0,
+      "trofeos": [],
+      "logros": [],
+      "nivel": 0,
+      "fotoPerfil": [],
+      "fotoPerfilActual": []
+    },
+    {
+      "id": 6,
+      "email": "profe",
+      "password": "123456",
+      "experience": 0,
+      "coins": 0,
+      "generatedmemes": 0,
+      "trofeos": [],
+      "logros": [],
+      "nivel": 0,
+      "fotoPerfil": [],
+      "fotoPerfilActual": []
+    },
+    {
+      "id": 7,
+      "email": "profe1",
+      "password": "123456",
+      "experience": 0,
+      "coins": 0,
+      "generatedmemes": 0,
+      "trofeos": [],
+      "logros": [],
+      "nivel": 0,
+      "fotoPerfil": [],
+      "fotoPerfilActual": []
+    }
+  ]
+}
